@@ -55,8 +55,6 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 public class MainProg {
 	
-	/*--------*2017*-----------*CREATED BY FACUNDO MAYOL*----------------------*/
-	
 	static final int GameSquare = 600;
 	static final int MegaSize = GameSquare/40;
 	static final int MediumSize = GameSquare/70;
@@ -74,7 +72,7 @@ public class MainProg {
 	static public String Algorithm = "Depth-First Search";
 	static public int SizeOfGrid = 0;
 	static public int GameState = 0;
-	static public String VersionID = "1.0.0.1 - Made by Facundo Mayol *2017*";
+	static public String VersionID = "0.0.1";
 	static public Cell CurrentCellInGame;
 	static public Cell PreviusCellInGame = null;
 	static public Graphics2D PreviusPlayed = null;
@@ -170,7 +168,7 @@ public class MainProg {
 						g2D.setStroke(new BasicStroke(3));
 						g2D.drawRect((this.getWidth()/2)-(TitleWidth/2)-10, (this.getHeight()/2)-110-TitleHeight, TitleWidth+17, TitleHeight+10);
 						g2D.setFont(new Font("serif", Font.PLAIN, 58));
-						g2D.drawString("RLaberinth", (this.getWidth()/2)-(TitleWidth/2), (this.getHeight()/2)-115);
+						g2D.drawString("RLabyrinth", (this.getWidth()/2)-(TitleWidth/2), (this.getHeight()/2)-115);
 						if(MouseOverPlayButton){
 
 							g2D.setColor(Color.DARK_GRAY.brighter());
